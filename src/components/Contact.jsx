@@ -93,15 +93,18 @@ const Contact = () => {
                  {personalData.socialLinks.map((social, index) => {
                    const Icon = social.icon;
                    return (
-                     <a
-                       key={index}
-                       href={social.url}
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       className="p-3 bg-white/20 hover:bg-white/30 rounded-full transition-colors backdrop-blur-sm"
-                     >
-                       <Icon size={20} />
-                     </a>
+                  <motion.a
+                    key={index}
+                    href={social.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    whileHover={{ scale: 1.2, rotate: 10 }}
+                    whileTap={{ scale: 0.9 }}
+                    transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                    className="p-3 bg-white/20 hover:bg-white/40 rounded-full text-white transition-colors backdrop-blur-sm shadow-lg border border-white/10"
+                  >
+                    <Icon size={20} />
+                  </motion.a>
                    );
                  })}
                </div>

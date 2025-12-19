@@ -108,6 +108,25 @@ const Skills = () => {
               </div>
             </motion.div>
           </div>
+
+          {/* AI Tools Section */}
+          <motion.div 
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.5 }}
+            className="bg-white/50 dark:bg-gray-900/50 p-8 rounded-3xl border border-gray-100 dark:border-gray-800 backdrop-blur-sm"
+          >
+            <h3 className="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-8 flex items-center gap-3">
+              <span className="w-2 h-8 bg-gradient-to-b from-purple-400 to-pink-500 rounded-full"></span>
+              AI & Pro Tools
+            </h3>
+            <div className="flex flex-wrap gap-4">
+              {skillsData.aiTools.map((skill, index) => (
+                <SkillPill key={index} skill={skill} index={index} />
+              ))}
+            </div>
+          </motion.div>
         </div>
       </div>
     </section>

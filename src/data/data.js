@@ -28,8 +28,14 @@ import {
   SiFirebase, 
   SiVercel, 
   SiJest,
-  SiPrisma
+  SiPrisma,
+  SiDotnet,
+  SiPostman,
+  SiSwagger,
+  SiSupabase
 } from "react-icons/si";
+import { TbApi, TbCursorText, TbCode } from "react-icons/tb";
+import { FaRocket } from "react-icons/fa";
 import { 
   MdOutlineEmail, 
   MdLocalPhone, 
@@ -38,39 +44,40 @@ import {
   MdStorage,
   MdCloudQueue,
   MdSecurity,
-  MdSpeed
+  MdSpeed,
+  MdAccountTree
 } from "react-icons/md";
 import { FaCode } from "react-icons/fa";
 
 export const servicesData = [
   {
-    title: "Web App Development",
-    description: "I build responsive, high-performance web applications using modern technologies like React, Next.js, and Node.js. My focus is on creating seamless user experiences that work perfectly across all devices.",
+    title: "Full Stack Web Development",
+    description: "I build scalable, high-performance web applications and software solutions using modern technologies like React, Next.js, and Node.js, tailored to your business needs.",
     icon: MdWeb
   },
   {
     title: "API Design & Integration",
-    description: "I design and implement secure, scalable RESTful and GraphQL APIs. Whether it's integrating third-party services or building a custom backend, I ensure your data flows efficiently.",
+    description: "I design secure, documented, and efficient RESTful and GraphQL APIs. I also seamlessly integrate third-party services to extend application functionality.",
     icon: FaCode
   },
   {
-    title: "Database Architecture",
-    description: "I design optimized database schemas for both SQL (PostgreSQL) and NoSQL (MongoDB) databases. I ensure data integrity, security, and performance for your applications.",
-    icon: MdStorage
+    title: "UI/UX Design",
+    description: "I create intuitive and visually stunning user interfaces using Figma. My designs focus on user experience, ensuring your product is both beautiful and easy to use.",
+    icon: SiFigma
   },
   {
-    title: "Cloud Solutions",
-    description: "I deploy and manage applications on cloud platforms like AWS and Vercel. I set up CI/CD pipelines to automate testing and deployment, ensuring reliable and fast releases.",
+    title: "DevOps & Deployment",
+    description: "I streamline deployment processes using Docker, CI/CD pipelines, and cloud platforms like AWS and Vercel, ensuring your applications are always up and running smoothly.",
     icon: MdCloudQueue
   },
   {
-    title: "Performance Optimization",
-    description: "I optimize web applications for speed and accessibility. I audit performance using Core Web Vitals and implement best practices to improve SEO and user retention.",
-    icon: MdSpeed
+    title: "Cross-Platform Backend",
+    description: "I architect robust backend systems and APIs that serve as the backbone for both mobile apps and web solutions, ensuring data consistency and high availability.",
+    icon: MdStorage
   },
   {
     title: "Security Best Practices",
-    description: "I implement robust security measures, including authentication (OAuth, JWT), authorization, and data encryption, to protect your application and user data from threats.",
+    description: "I implement industry-standard security measures, including authentication (OAuth, JWT) and data encryption, to safeguard your applications and users against threats.",
     icon: MdSecurity
   }
 ];
@@ -97,10 +104,10 @@ export const testimonialsData = [
 ];
 
 export const personalData = {
-  name: "Alex Dev",
+  name: "Pratik Sawant",
   role: "Senior Full Stack Engineer",
   tagline: "Building digital products, brands, and experiences.",
-  bio: "I'm a passionate Full Stack Developer with over 5 years of experience in building scalable web applications. I specialize in the JavaScript ecosystem, crafting robust backends and intuitive frontends. My goal is to leverage technology to solve real-world problems and deliver exceptional user experiences.",
+  bio: "I am a passionate Software Developer with 2+ years of hands-on experience in building efficient and scalable applications. Currently working as a Junior Software Engineer at Loyal String International Pvt. Ltd., I actively contribute to development teams with a strong focus on clean code and problem-solving. Driven by continuous learning and innovation, I aim to deliver reliable, high-quality solutions that create real value for users and businesses.",
   profileImage: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?fit=crop&w=800&h=800&q=80",
   resumeUrl: "#", // Add your resume link here
   socialLinks: [
@@ -130,26 +137,33 @@ export const skillsData = {
     { name: "Sass", icon: FaSass, color: "#CC6699", level: 80 },
   ],
   backend: [
-    { name: "Node.js", icon: FaNodeJs, color: "#339933", level: 92 },
     { name: "Express", icon: SiExpress, color: "#000000", level: 90 },
-    { name: "NestJS", icon: FaNodeJs, color: "#E0234E", level: 80 }, // Using Node icon as placeholder or find SiNestjs
-    { name: "GraphQL", icon: SiGraphql, color: "#E10098", level: 75 },
-    { name: "Python", icon: FaPython, color: "#3776AB", level: 70 },
-    { name: "Java", icon: FaJava, color: "#007396", level: 65 },
+    { name: ".NET Web API", icon: SiDotnet, color: "#512BD4", level: 85 },
+    { name: "Node.js", icon: FaNodeJs, color: "#339933", level: 92 },
+    { name: "Advance Java", icon: FaJava, color: "#E76F00", level: 80 },
+    { name: "Core Java", icon: FaJava, color: "#5382A1", level: 85 },
   ],
   database: [
-    { name: "PostgreSQL", icon: SiPostgresql, color: "#336791", level: 85 },
+    { name: "SQL", icon: SiPostgresql, color: "#336791", level: 90 },
     { name: "MongoDB", icon: SiMongodb, color: "#47A248", level: 90 },
     { name: "Firebase", icon: SiFirebase, color: "#FFCA28", level: 80 },
-    { name: "Prisma", icon: SiPrisma, color: "#2D3748", level: 85 },
+    { name: "Supabase", icon: SiSupabase, color: "#3ECF8E", level: 85 },
   ],
   tools: [
     { name: "Git", icon: FaGitAlt, color: "#F05032" },
     { name: "Docker", icon: FaDocker, color: "#2496ED" },
-    { name: "AWS", icon: FaAws, color: "#FF9900" },
-    { name: "Vercel", icon: SiVercel, color: "#000000" },
+    { name: "Postman", icon: SiPostman, color: "#FF6C37" },
+    { name: "Requestly", icon: TbApi, color: "#2A3B4C" },
     { name: "Figma", icon: SiFigma, color: "#F24E1E" },
-    { name: "Jest", icon: SiJest, color: "#C21325" },
+    { name: "Swagger", icon: SiSwagger, color: "#85EA2D" },
+  ],
+  aiTools: [
+    { name: "Cursor", icon: TbCursorText, color: "#3794FF" },
+    { name: "n8n", icon: MdAccountTree, color: "#FF6584" },
+    { name: "Antigravity", icon: FaRocket, color: "#8B5CF6" },
+    { name: "Firebase Studio", icon: SiFirebase, color: "#FFCA28" },
+    { name: "VS Code", icon: FaCode, color: "#007ACC" },
+    { name: "Visual Studio", icon: TbCode, color: "#5C2D91" },
   ]
 };
 

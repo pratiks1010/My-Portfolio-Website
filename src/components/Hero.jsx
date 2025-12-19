@@ -39,7 +39,7 @@ const Hero = () => {
           </h1>
           
           <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-lg leading-relaxed font-light">
-            {personalData.bio}
+            I am a passionate <span className="font-semibold text-gray-900 dark:text-white">Software Developer</span> with <span className="font-semibold text-primary-600 dark:text-primary-400">2+ years</span> of experience. Currently a <span className="font-semibold text-gray-900 dark:text-white">Junior Software Engineer</span> at <span className="font-semibold text-gray-900 dark:text-white">Loyal String International Pvt. Ltd.</span>, focused on building scalable applications and delivering high-quality solutions.
           </p>
           
           <div className="flex flex-wrap gap-4 mb-10">
@@ -67,15 +67,18 @@ const Hero = () => {
               {personalData.socialLinks.map((social, index) => {
                 const Icon = social.icon;
                 return (
-                  <a
+                  <motion.a
                     key={index}
                     href={social.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 text-2xl transition-colors transform hover:-translate-y-1"
+                    whileHover={{ scale: 1.2, rotate: 10, color: "#6366f1" }}
+                    whileTap={{ scale: 0.9 }}
+                    transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                    className="text-gray-400 text-2xl"
                   >
                     <Icon />
-                  </a>
+                  </motion.a>
                 );
               })}
             </div>
