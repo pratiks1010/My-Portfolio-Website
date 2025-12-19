@@ -8,11 +8,18 @@ import { HiDownload } from 'react-icons/hi';
 const Hero = () => {
   return (
     <section id="hero" className="min-h-screen flex items-center relative overflow-hidden bg-gray-50 dark:bg-[#0a0a0a] pt-20">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1.5 }}
+        className="absolute inset-0"
+      >
       {/* Abstract Background Elements */}
       <div className="absolute top-20 right-0 w-[500px] h-[500px] bg-primary-500/20 rounded-full blur-[120px] -z-10 animate-blob"></div>
       <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-secondary-500/20 rounded-full blur-[120px] -z-10 animate-blob animation-delay-2000"></div>
 
-      <div className="container mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
+      </motion.div>
+      <div className="container mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}

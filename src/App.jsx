@@ -4,6 +4,7 @@ import Hero from './components/Hero';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Experience from './components/Experience';
+import Services from './components/Services';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
@@ -32,6 +33,7 @@ function App() {
             The Hero has the bio.
         */}
         <Skills />
+        <Services />
         <Projects />
         <Experience />
         <Contact />

@@ -6,7 +6,13 @@ import { MdWork, MdSchool } from 'react-icons/md';
 const Experience = () => {
   return (
     <section id="experience" className="py-24 bg-gray-50 dark:bg-[#0a0a0a]">
-      <div className="container mx-auto px-6">
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{ duration: 0.8 }}
+        className="container mx-auto px-6"
+      >
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4 font-heading">
             Work & <span className="text-primary-600 dark:text-primary-400">Education</span>
@@ -84,7 +90,7 @@ const Experience = () => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

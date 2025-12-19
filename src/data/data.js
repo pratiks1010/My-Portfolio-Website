@@ -30,7 +30,71 @@ import {
   SiJest,
   SiPrisma
 } from "react-icons/si";
-import { MdOutlineEmail, MdLocalPhone, MdLocationOn } from "react-icons/md";
+import { 
+  MdOutlineEmail, 
+  MdLocalPhone, 
+  MdLocationOn,
+  MdWeb,
+  MdStorage,
+  MdCloudQueue,
+  MdSecurity,
+  MdSpeed
+} from "react-icons/md";
+import { FaCode } from "react-icons/fa";
+
+export const servicesData = [
+  {
+    title: "Web App Development",
+    description: "I build responsive, high-performance web applications using modern technologies like React, Next.js, and Node.js. My focus is on creating seamless user experiences that work perfectly across all devices.",
+    icon: MdWeb
+  },
+  {
+    title: "API Design & Integration",
+    description: "I design and implement secure, scalable RESTful and GraphQL APIs. Whether it's integrating third-party services or building a custom backend, I ensure your data flows efficiently.",
+    icon: FaCode
+  },
+  {
+    title: "Database Architecture",
+    description: "I design optimized database schemas for both SQL (PostgreSQL) and NoSQL (MongoDB) databases. I ensure data integrity, security, and performance for your applications.",
+    icon: MdStorage
+  },
+  {
+    title: "Cloud Solutions",
+    description: "I deploy and manage applications on cloud platforms like AWS and Vercel. I set up CI/CD pipelines to automate testing and deployment, ensuring reliable and fast releases.",
+    icon: MdCloudQueue
+  },
+  {
+    title: "Performance Optimization",
+    description: "I optimize web applications for speed and accessibility. I audit performance using Core Web Vitals and implement best practices to improve SEO and user retention.",
+    icon: MdSpeed
+  },
+  {
+    title: "Security Best Practices",
+    description: "I implement robust security measures, including authentication (OAuth, JWT), authorization, and data encryption, to protect your application and user data from threats.",
+    icon: MdSecurity
+  }
+];
+
+export const testimonialsData = [
+  {
+    name: "Sarah Johnson",
+    role: "CTO at TechStart",
+    content: "Alex is a phenomenal developer. He didn't just write code; he helped us architect our entire platform from scratch. His attention to detail and problem-solving skills are unmatched.",
+    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?fit=crop&w=150&h=150&q=80"
+  },
+  {
+    name: "Michael Chen",
+    role: "Product Manager",
+    content: "Working with Alex was a game-changer for our project. He delivered ahead of schedule and the quality of the UI was exactly what our design team envisioned. Highly recommended!",
+    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?fit=crop&w=150&h=150&q=80"
+  },
+  {
+    name: "Emily Rodriguez",
+    role: "Founder, Creative Agency",
+    content: "We hired Alex to revamp our legacy system. He successfully migrated us to a modern stack without any downtime. His communication throughout the process was excellent.",
+    image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?fit=crop&w=150&h=150&q=80"
+  }
+];
 
 export const personalData = {
   name: "Alex Dev",

@@ -18,6 +18,13 @@ const Projects = () => {
 
   return (
     <section id="projects" className="py-24 bg-gray-50 dark:bg-black relative overflow-hidden">
+       <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.1 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="absolute inset-0 pointer-events-none"
+       />
        {/* Decorative Background */}
        <div className="absolute top-1/3 right-0 w-[500px] h-[500px] bg-primary-500/5 rounded-full blur-[100px] -z-10"></div>
        <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-secondary-500/5 rounded-full blur-[100px] -z-10"></div>

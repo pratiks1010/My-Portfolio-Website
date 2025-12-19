@@ -24,10 +24,13 @@ const Contact = () => {
 
   return (
     <section id="contact" className="py-24 bg-white dark:bg-black relative overflow-hidden">
-       {/* Background Decoration */}
-      <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-primary-500/5 rounded-full blur-3xl -z-10"></div>
-      
-      <div className="container mx-auto px-6">
+       <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.8 }}
+            className="container mx-auto px-6 relative z-10"
+       >
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4 font-heading">
             Get In <span className="text-primary-600 dark:text-primary-400">Touch</span>
@@ -180,7 +183,15 @@ const Contact = () => {
             </form>
           </motion.div>
         </div>
-      </div>
+       </motion.div>
+       
+       {/* Background Decoration - Animated independently */}
+       <motion.div 
+         initial={{ opacity: 0 }}
+         whileInView={{ opacity: 1 }}
+         transition={{ duration: 1.5 }}
+         className="absolute top-0 right-0 w-[600px] h-[600px] bg-primary-500/5 rounded-full blur-3xl -z-10"
+       ></motion.div>
     </section>
   );
 };

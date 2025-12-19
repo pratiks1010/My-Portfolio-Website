@@ -27,7 +27,13 @@ const SkillPill = ({ skill, index }) => {
 const Skills = () => {
   return (
     <section id="skills" className="py-24 bg-gray-50 dark:bg-[#0a0a0a] relative">
-       <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 brightness-100 dark:brightness-0 pointer-events-none"></div>
+      <motion.div
+         initial={{ opacity: 0 }}
+         whileInView={{ opacity: 1 }}
+         viewport={{ once: true }}
+         transition={{ duration: 0.8 }}
+         className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 brightness-100 dark:brightness-0 pointer-events-none"
+      />
        
       <div className="container mx-auto px-6 relative z-10">
         <motion.div 
@@ -46,7 +52,13 @@ const Skills = () => {
 
         <div className="space-y-12">
           {/* Frontend Section */}
-          <div className="bg-white/50 dark:bg-gray-900/50 p-8 rounded-3xl border border-gray-100 dark:border-gray-800 backdrop-blur-sm">
+          <motion.div 
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="bg-white/50 dark:bg-gray-900/50 p-8 rounded-3xl border border-gray-100 dark:border-gray-800 backdrop-blur-sm"
+          >
             <h3 className="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-8 flex items-center gap-3">
               <span className="w-2 h-8 bg-gradient-to-b from-primary-400 to-secondary-500 rounded-full"></span>
               Frontend Development
@@ -56,11 +68,17 @@ const Skills = () => {
                 <SkillPill key={index} skill={skill} index={index} />
               ))}
             </div>
-          </div>
+          </motion.div>
 
           {/* Backend & Database Split */}
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-white/50 dark:bg-gray-900/50 p-8 rounded-3xl border border-gray-100 dark:border-gray-800 backdrop-blur-sm">
+            <motion.div 
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              className="bg-white/50 dark:bg-gray-900/50 p-8 rounded-3xl border border-gray-100 dark:border-gray-800 backdrop-blur-sm"
+            >
               <h3 className="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-8 flex items-center gap-3">
                 <span className="w-2 h-8 bg-gradient-to-b from-secondary-400 to-secondary-600 rounded-full"></span>
                 Backend & Services
@@ -70,9 +88,15 @@ const Skills = () => {
                   <SkillPill key={index} skill={skill} index={index} />
                 ))}
               </div>
-            </div>
+            </motion.div>
 
-            <div className="bg-white/50 dark:bg-gray-900/50 p-8 rounded-3xl border border-gray-100 dark:border-gray-800 backdrop-blur-sm">
+            <motion.div 
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+              className="bg-white/50 dark:bg-gray-900/50 p-8 rounded-3xl border border-gray-100 dark:border-gray-800 backdrop-blur-sm"
+            >
               <h3 className="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-8 flex items-center gap-3">
                 <span className="w-2 h-8 bg-gradient-to-b from-primary-400 to-primary-600 rounded-full"></span>
                 Database & Tools
@@ -82,7 +106,7 @@ const Skills = () => {
                   <SkillPill key={index} skill={skill} index={index} />
                 ))}
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>
