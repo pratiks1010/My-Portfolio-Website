@@ -53,6 +53,8 @@ const Hero = () => {
             </Link>
             <a
               href={personalData.resumeUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-8 py-4 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-gray-900 dark:text-white rounded-full font-semibold transition-all hover:border-primary-500 dark:hover:border-primary-500 cursor-pointer flex items-center gap-2 group"
             >
               <HiDownload className="text-xl group-hover:translate-y-1 transition-transform" />

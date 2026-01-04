@@ -34,7 +34,7 @@ import {
   SiSwagger,
   SiSupabase
 } from "react-icons/si";
-import { TbApi, TbCursorText, TbCode } from "react-icons/tb";
+import { TbApi, TbCursorText, TbCode, TbCloud } from "react-icons/tb";
 import { FaRocket } from "react-icons/fa";
 import { 
   MdOutlineEmail, 
@@ -45,7 +45,9 @@ import {
   MdCloudQueue,
   MdSecurity,
   MdSpeed,
-  MdAccountTree
+  MdAccountTree,
+  MdCloud,
+  MdSettings
 } from "react-icons/md";
 import { FaCode } from "react-icons/fa";
 
@@ -82,44 +84,23 @@ export const servicesData = [
   }
 ];
 
-export const testimonialsData = [
-  {
-    name: "Sarah Johnson",
-    role: "CTO at TechStart",
-    content: "Alex is a phenomenal developer. He didn't just write code; he helped us architect our entire platform from scratch. His attention to detail and problem-solving skills are unmatched.",
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?fit=crop&w=150&h=150&q=80"
-  },
-  {
-    name: "Michael Chen",
-    role: "Product Manager",
-    content: "Working with Alex was a game-changer for our project. He delivered ahead of schedule and the quality of the UI was exactly what our design team envisioned. Highly recommended!",
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?fit=crop&w=150&h=150&q=80"
-  },
-  {
-    name: "Emily Rodriguez",
-    role: "Founder, Creative Agency",
-    content: "We hired Alex to revamp our legacy system. He successfully migrated us to a modern stack without any downtime. His communication throughout the process was excellent.",
-    image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?fit=crop&w=150&h=150&q=80"
-  }
-];
-
 export const personalData = {
-  name: "Pratik Sawant",
-  role: "Senior Full Stack Engineer",
-  tagline: "Building digital products, brands, and experiences.",
+  name: "Pratik Shashikant Sawant",
+  role: "Software Engineer",
+  tagline: "Building efficient, scalable, and user-centric digital solutions.",
   bio: "I am a passionate Software Developer with 2+ years of hands-on experience in building efficient and scalable applications. Currently working as a Junior Software Engineer at Loyal String International Pvt. Ltd., I actively contribute to development teams with a strong focus on clean code and problem-solving. Driven by continuous learning and innovation, I aim to deliver reliable, high-quality solutions that create real value for users and businesses.",
-  profileImage: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?fit=crop&w=800&h=800&q=80",
-  resumeUrl: "#", // Add your resume link here
+  profileImage: "https://drive.google.com/uc?export=view&id=1Qlx2tB-8UVk8PmDkar6vfDhQQSiJdgE1",
+  resumeUrl: "https://drive.google.com/file/d/1GAJkFdCeeYsWO_9E0bAFvap-xE1xNOXE/view?usp=sharing",
   socialLinks: [
-    { name: "GitHub", url: "https://github.com", icon: FaGithub },
-    { name: "LinkedIn", url: "https://linkedin.com", icon: FaLinkedinIn },
-    { name: "Twitter", url: "https://twitter.com", icon: FaTwitter },
-    { name: "Email", url: "mailto:alex@example.com", icon: FaEnvelope },
+    { name: "GitHub", url: "https://github.com/pratiks1010", icon: FaGithub },
+    { name: "LinkedIn", url: "https://www.linkedin.com/in/pratik-sawant-web-developer/", icon: FaLinkedinIn },
+    { name: "Portfolio", url: "https://pratiksawantportfolio.in/", icon: MdWeb },
+    { name: "Email", url: "mailto:sawantpratik109@gmail.com", icon: FaEnvelope },
   ],
   contact: {
-    email: "alex.developer@tech.com",
-    phone: "+1 (555) 123-4567",
-    location: "San Francisco, Bay Area, CA",
+    email: "sawantpratik109@gmail.com",
+    phone: "(+91) 7020092352 / 8888651921",
+    location: "Pune, Maharashtra, India",
     mapUrl: "https://maps.google.com"
   }
 };
@@ -127,7 +108,7 @@ export const personalData = {
 export const skillsData = {
   frontend: [
     { name: "React", icon: FaReact, color: "#61DAFB", level: 95 },
-    { name: "Next.js", icon: SiNextdotjs, color: "#000000", level: 90 }, // In dark mode this needs handling
+    { name: "Next.js", icon: SiNextdotjs, color: "#000000", level: 90 },
     { name: "TypeScript", icon: SiTypescript, color: "#3178C6", level: 88 },
     { name: "Tailwind CSS", icon: SiTailwindcss, color: "#38B2AC", level: 95 },
     { name: "Redux", icon: SiRedux, color: "#764ABC", level: 85 },
@@ -137,25 +118,28 @@ export const skillsData = {
     { name: "Sass", icon: FaSass, color: "#CC6699", level: 80 },
   ],
   backend: [
-    { name: "Express", icon: SiExpress, color: "#000000", level: 90 },
-    { name: ".NET Web API", icon: SiDotnet, color: "#512BD4", level: 85 },
-    { name: "Node.js", icon: FaNodeJs, color: "#339933", level: 92 },
+    { name: ".NET Web API", icon: SiDotnet, color: "#512BD4", level: 90 },
+    { name: "Node.js", icon: FaNodeJs, color: "#339933", level: 88 },
+    { name: "Express", icon: SiExpress, color: "#000000", level: 85 },
     { name: "Advance Java", icon: FaJava, color: "#E76F00", level: 80 },
     { name: "Core Java", icon: FaJava, color: "#5382A1", level: 85 },
   ],
   database: [
-    { name: "SQL", icon: SiPostgresql, color: "#336791", level: 90 },
-    { name: "MongoDB", icon: SiMongodb, color: "#47A248", level: 90 },
+    { name: "SQL Server", icon: SiPostgresql, color: "#CC2927", level: 90 }, // Using Postgres icon as placeholder for SQL
+    { name: "MongoDB", icon: SiMongodb, color: "#47A248", level: 85 },
     { name: "Firebase", icon: SiFirebase, color: "#FFCA28", level: 80 },
-    { name: "Supabase", icon: SiSupabase, color: "#3ECF8E", level: 85 },
+    { name: "Supabase", icon: SiSupabase, color: "#3ECF8E", level: 80 },
   ],
   tools: [
     { name: "Git", icon: FaGitAlt, color: "#F05032" },
     { name: "Docker", icon: FaDocker, color: "#2496ED" },
+    { name: "Kubernetes", icon: TbCloud, color: "#326CE5" },
+    { name: "Azure DevOps", icon: MdCloud, color: "#0078D7" },
     { name: "Postman", icon: SiPostman, color: "#FF6C37" },
     { name: "Requestly", icon: TbApi, color: "#2A3B4C" },
     { name: "Figma", icon: SiFigma, color: "#F24E1E" },
     { name: "Swagger", icon: SiSwagger, color: "#85EA2D" },
+    { name: "CI/CD Pipelines", icon: MdSettings, color: "#6366F1" },
   ],
   aiTools: [
     { name: "Cursor", icon: TbCursorText, color: "#3794FF" },
@@ -169,76 +153,67 @@ export const skillsData = {
 
 export const projectsData = [
   {
-    title: "SaaS Analytics Dashboard",
-    description: "A high-performance analytics dashboard for SaaS businesses, featuring real-time data visualization, user management, and automated reporting. Built with a microservices architecture.",
-    techStack: ["Next.js", "TypeScript", "Tremor", "Supabase", "Stripe"],
-    liveLink: "https://example.com",
-    githubLink: "https://github.com",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?fit=crop&w=1200&h=630&q=80",
+    title: "Jewelry Management Software",
+    description: "Developed a mission-critical ERP enabling real-time inventory tracking and end-to-end workflow management for retail jewelers. Features include customer/karigar management, invoicing, product cataloging, and transaction tracking.",
+    techStack: ["React.js", "ASP.NET Web API", "SQL Server", "Tailwind CSS"],
+    liveLink: "#", // Add link if available
+    githubLink: "#",
+    image: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?fit=crop&w=1200&h=630&q=80", // Jewelry/Luxury placeholder
     featured: true
   },
   {
-    title: "AI Content Generator",
-    description: "An AI-powered application that helps creators generate blog posts, social media captions, and marketing copy. Integrates with OpenAI GPT-4 API.",
-    techStack: ["React", "Node.js", "OpenAI API", "MongoDB", "Tailwind"],
-    liveLink: "https://example.com",
-    githubLink: "https://github.com",
-    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?fit=crop&w=1200&h=630&q=80",
+    title: "Stock Market Trading Dashboard",
+    description: "A comprehensive dashboard to track daily trades, manage positions, and monitor P/L and accuracy. Integrated real-time market data using NSE APIs and webhooks for live updates and actionable insights.",
+    techStack: ["Next.js", "Tailwind CSS", "ASP.NET Web API", "SQL Server", "NSE API"],
+    liveLink: "#",
+    githubLink: "#",
+    image: "https://images.unsplash.com/photo-1611974765270-ca12586343bb?fit=crop&w=1200&h=630&q=80", // Finance placeholder
     featured: true
   },
   {
-    title: "E-Commerce Platform",
-    description: "A fully functional e-commerce platform with cart functionality, payment processing, order tracking, and an admin panel for inventory management.",
-    techStack: ["Vue.js", "Firebase", "Stripe", "Netlify"],
-    liveLink: "https://example.com",
-    githubLink: "https://github.com",
-    image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?fit=crop&w=1200&h=630&q=80",
-    featured: false
-  },
-  {
-    title: "Task Master Pro",
-    description: "Collaborative project management tool with Kanban boards, real-time updates via WebSockets, and team chat functionality.",
-    techStack: ["React", "Socket.io", "Express", "PostgreSQL"],
-    liveLink: "https://example.com",
-    githubLink: "https://github.com",
-    image: "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?fit=crop&w=1200&h=630&q=80",
+    title: "Hospital Management Software",
+    description: "A robust system for patient registration, appointment booking, and doctor management. Implemented role-based admin authorization to securely manage sensitive patient and hospital data.",
+    techStack: ["React.js", "Java Spring Boot", "ASP.NET Web API", "SQL Server"],
+    liveLink: "#",
+    githubLink: "#",
+    image: "https://images.unsplash.com/photo-1516549655169-df83a092dd14?fit=crop&w=1200&h=630&q=80", // Medical placeholder
     featured: false
   }
 ];
 
 export const experienceData = [
   {
-    title: "Senior Full Stack Engineer",
-    company: "Innovate Tech Solutions",
-    period: "2023 - Present",
-    location: "Remote",
-    description: "Architecting scalable cloud-native applications. Leading a squad of 6 developers. Reduced server costs by 30% through optimization."
+    title: "Software Engineer",
+    company: "LoyalString International Pvt Ltd",
+    period: "Jan 2025 - Present",
+    location: "Pune, Maharashtra",
+    description: "Developing scalable software solutions for a mission-critical Gold Jewelry ERP system. Building and optimizing RESTful APIs using ASP.NET Web API. Designing optimized SQL databases for reliable data storage. Contributing to UI/UX design and frontend development with React.js and Tailwind CSS."
   },
   {
-    title: "Full Stack Developer",
-    company: "Digital Creative Agency",
-    period: "2021 - 2023",
-    location: "New York, NY",
-    description: "Developed award-winning marketing websites and web apps for Fortune 500 clients. Implemented headless CMS solutions."
-  },
-  {
-    title: "Frontend Developer",
-    company: "StartUp Inc.",
-    period: "2019 - 2021",
-    location: "San Francisco, CA",
-    description: "Built responsive user interfaces using React and Redux. Collaborated closely with UX designers to ensure pixel-perfect implementation."
+    title: "Executive Web Developer & UI/UX Designer",
+    company: "TreatGlobal PVT Ltd (Healthus.ai)",
+    period: "Feb 2024 - Jan 2025",
+    location: "Pune, Maharashtra",
+    description: "Designed and developed responsive websites using HTML, CSS, React, WordPress, and PHP. Created user-friendly UI/UX designs using Figma and Adobe Suite. Integrated advanced WordPress plugins and implemented SEO strategies to improve website visibility and conversion rates."
   }
 ];
 
 export const educationData = [
   {
-    degree: "Master of Computer Science",
-    school: "Tech University",
-    year: "2019"
+    degree: "Post Graduate Diploma in Advanced Computing (PG-DAC)",
+    school: "Institute for Advanced Computing & Software Development (IACSD)",
+    year: "April 2023 - Sep 2023"
   },
   {
-    degree: "Bachelor of Science in Software Engineering",
-    school: "State College",
-    year: "2017"
+    degree: "Bachelor of Technology (B.Tech) in Mechanical Engineering",
+    school: "University of Pune",
+    year: "June 2017 - Sep 2022"
   }
+];
+
+export const certificationsData = [
+  "Udemy ASP.NET Core Deep-Dive in .NET 9",
+  "Udemy React and NextJS course with AI",
+  "Docker and Kubernetes DevOps journey",
+  "Advanced Computing & Software Development (PG-DAC)"
 ];
