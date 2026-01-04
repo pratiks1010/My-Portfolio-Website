@@ -104,6 +104,10 @@ const Hero = () => {
                 src={personalData.profileImage}
                 alt={personalData.name}
                 className="w-full h-full object-cover"
+                onError={(e) => {
+                  e.target.onerror = null;
+                  e.target.src = "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?fit=crop&w=800&h=800&q=80";
+                }}
               />
               
               {/* Floating Badge */}

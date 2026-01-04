@@ -89,7 +89,7 @@ export const personalData = {
   role: "Software Engineer",
   tagline: "Building efficient, scalable, and user-centric digital solutions.",
   bio: "I am a passionate Software Developer with 2+ years of hands-on experience in building efficient and scalable applications. Currently working as a Junior Software Engineer at Loyal String International Pvt. Ltd., I actively contribute to development teams with a strong focus on clean code and problem-solving. Driven by continuous learning and innovation, I aim to deliver reliable, high-quality solutions that create real value for users and businesses.",
-  profileImage: "https://drive.google.com/uc?export=view&id=1Qlx2tB-8UVk8PmDkar6vfDhQQSiJdgE1",
+  profileImage: "https://lh3.googleusercontent.com/d/1Qlx2tB-8UVk8PmDkar6vfDhQQSiJdgE1",
   resumeUrl: "https://drive.google.com/file/d/1GAJkFdCeeYsWO_9E0bAFvap-xE1xNOXE/view?usp=sharing",
   socialLinks: [
     { name: "GitHub", url: "https://github.com/pratiks1010", icon: FaGithub },
